@@ -103,7 +103,7 @@ a:focus {
   text-decoration: none;
 }
 a:not([class]):hover {
-  color: $blue !important;
+ 
 }
 img {
   max-width: 100%;
@@ -519,7 +519,8 @@ h2 {
 }
 .offerblock__image {
   position: absolute;
-  left: 0;
+/*   left: 0; */
+  right: 670px;
   top: 0;
 }
 .offerblock__text {
@@ -643,4 +644,23 @@ a.btn_light {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
+}
+
+.blockwrapper {
+  overflow: hidden;
+}
+
+.promoblock__contetn {
+  position: relative;
+  z-index: 1;
+}
+
+body {
+  padding-bottom: 100px;
+}
+.onlyMobile {
+  display: none;
+}
+@media (max-width: 999px) {
+
 }
