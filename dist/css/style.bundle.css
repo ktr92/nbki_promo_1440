@@ -133,7 +133,12 @@ body {
   color: #000;
   overflow-x: hidden;
   width: 100%;
-  background: #f5f8f8;
+  background-color: #f5f8f8;
+  /* background-image: url(../img/bg_wd.png); */
+  background-image: url(../img/bg_svg.svg);
+  background-position: center top;
+  /* background-size: 83%; */
+  background-repeat: no-repeat;
 }
 
 body.overflow {
@@ -247,7 +252,7 @@ button.btn_main:hover {
 
 .heroblock__wrapper {
   display: flex;
-  padding: 35px 0 17px 0;
+  padding: 17px 0 17px 0;
   align-items: center;
 }
 
@@ -626,6 +631,94 @@ a.btn_light {
 
 #footer {
   margin-bottom: 40px;
+  position: relative;
+}
+#footer .container {
+  position: relative;
+}
+
+.infotext {
+  position: relative;
+  z-index: 2;
+}
+
+#object_3 {
+  left: -49px;
+  top: -106px;
+}
+
+#object_4 {
+  right: 50%;
+  transform: translateX(50%);
+  margin: auto;
+  bottom: -42px;
+}
+
+#object_6 {
+  left: -57px;
+  bottom: -44px;
+}
+
+.offer_bar .blockwrapper {
+  position: relative;
+}
+
+.offer_bar {
+  position: fixed;
+  bottom: 20px;
+  left: 12px;
+  right: 12px;
+  margin: auto;
+  max-width: 1320px;
+  z-index: 9;
+}
+
+.offer_bar__wrapper {
+  position: relative;
+  padding: 16px 50px 16px 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.offer_bar__text span {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  letter-spacing: -0.03em;
+  color: #445371;
+}
+.offer_bar__text span:last-child {
+  padding-left: 16px;
+}
+
+.offer_bar__button .btn_main {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+}
+
+.offer_bar__icon {
+  position: relative;
+  position: absolute;
+  right: 392px;
+}
+
+[data-scrolltoggle=offer_bar] {
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  will-change: opacity, transform;
+}
+
+[data-scrolltoggle=offer_bar].visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 /* desktop small */
