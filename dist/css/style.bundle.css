@@ -938,7 +938,7 @@ body {
     transform: translateY(4px);
   }
   .promoblock .blockwrapper {
-    border-width: 3px;
+    border-width: 2px;
   }
   .promoblock .promoblock__button .btn_main {
     font-weight: 500;
