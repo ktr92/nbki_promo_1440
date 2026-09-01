@@ -759,14 +759,22 @@ body {
   .cardsblock__item {
     flex: unset;
   }
+  /*   .offer_bar  {
+      max-width: 327px;
+      margin: auto;
+    } */
   .offer_bar__wrapper {
     padding: 16px 12px;
     flex-wrap: wrap;
   }
   .offer_bar__text {
     width: 100%;
-    text-align: right;
     margin-bottom: 32px;
+    text-align: center;
+    max-width: 327px;
+    /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
   }
   .offer_bar__text span {
     display: inline;
@@ -776,6 +784,9 @@ body {
     letter-spacing: -0.03em;
     text-align: center;
     color: #445371;
+  }
+  .offer_bar__text span:last-child {
+    padding-left: 0;
   }
   .offer_bar__button .btn_main {
     padding: 16px 24px;
@@ -983,9 +994,15 @@ body {
     width: 100%;
     overflow: auto;
   }
+  #object_6 {
+    right: -10px;
+    bottom: 20px;
+    left: unset;
+  }
   .cardsblock__item {
     min-width: 327px;
-    max-width: 327px;
+    width: 100%;
+    /* max-width: 327px; */
   }
   .cardswrapper__wrapper {
     padding: 24px 12px;
