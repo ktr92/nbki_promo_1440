@@ -191,7 +191,7 @@ ul {
 }
 
 .header__topline {
-  margin: 24px auto;
+  margin: 0 auto 35px auto;
   padding: 16px 0;
 }
 
@@ -241,6 +241,10 @@ button.btn_main:hover {
   border-radius: 32px;
 }
 
+.heroblock {
+  margin-top: 24px;
+}
+
 .heroblock .blockwrapper {
   padding-left: 50px;
   padding-right: 50px;
@@ -248,7 +252,7 @@ button.btn_main:hover {
 
 .heroblock__wrapper {
   display: flex;
-  padding: 17px 0 17px 0;
+  padding: 0 0 17px 0;
   align-items: center;
 }
 
@@ -336,7 +340,7 @@ button.btn_main:hover {
 
 #object_1 {
   position: absolute;
-  bottom: 19px;
+  bottom: 18px;
   left: 173px;
   transform: rotate(0);
 }
@@ -400,7 +404,7 @@ button.btn_main:hover {
   margin-bottom: 60px;
 }
 .promoblock .blockwrapper {
-  border: 16px solid #344ccc;
+  border: 4px solid rgba(52, 76, 204, 0.6980392157);
 }
 
 .promoblock__wrapper {
@@ -732,7 +736,7 @@ body {
 }
 
 .onlyMobile {
-  display: none;
+  display: none !important;
 }
 
 /* desktop small */
@@ -741,10 +745,10 @@ body {
 /* mobile */
 @media only screen and (max-width: 855px) {
   .onlyDesktop {
-    display: none;
+    display: none !important;
   }
   .onlyMobile {
-    display: block;
+    display: block !important;
   }
   body {
     padding: 16px 0;
@@ -787,6 +791,9 @@ body {
   }
   .offer_bar__button .btn_main {
     width: 100%;
+  }
+  .heroblock {
+    margin-top: 0;
   }
   .heroblock .blockwrapper {
     padding: 0 12px;

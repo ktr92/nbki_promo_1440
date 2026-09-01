@@ -11,10 +11,10 @@
 /* mobile */
 @include small-screen {
   .onlyDesktop {
-    display: none;
+    display: none !important;
   }
   .onlyMobile {
-    display: block;
+    display: block !important;
   }
   body {
     padding: 16px 0;
@@ -59,6 +59,9 @@
     .btn_main {
       width: 100%;
     }
+  }
+  .heroblock {
+    margin-top: 0;
   }
   .heroblock .blockwrapper {
     padding: 0 12px;
